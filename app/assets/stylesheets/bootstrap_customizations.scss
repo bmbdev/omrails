@@ -21,13 +21,13 @@
 $gray-dark:                 #96A1A3;
 $gray:                      #666666;
 $gray-light:                #666666;
-$gray-lighter:              #ffffff;
-$gray-lightest:             #ffffff;
+$gray-lighter:              #96A1A3;
+$gray-lightest:             #96A1A3;
 
 $brand-primary:             #9D8BA3;
-$brand-success:             #ffffff;
-$brand-info:                #ffffff;
-$brand-warning:             #ffffff;
+$brand-success:             #666666;
+$brand-info:                #96A1A3;
+$brand-warning:             #96A1A3;
 $brand-danger:              #e6e6e6;
 $brand-inverse:             $gray-dark;
 
@@ -54,8 +54,8 @@ $border-width: 1px;
 //
 // Settings for the `<body>` element.
 
-$body-bg:    #96A1A3;
-$body-color: #f7f5f7;
+$body-bg:    #ffffff;
+$body-color: #666666;
 
 
 // Links
@@ -97,7 +97,7 @@ $headings-margin-bottom: ($spacer / 2);
 $headings-font-family:   inherit;
 $headings-font-weight:   500;
 $headings-line-height:   1.1;
-$headings-color:         #ffffff;
+$headings-color:         #404749;
 
 
 // Components
@@ -119,8 +119,8 @@ $navbar-padding-x:                  $spacer;
 $navbar-padding-y:                  ($spacer / 2);
 $navbar-brand-padding-y:            .25rem;
 
-$navbar-dark-color:                 #ffffff;
-$navbar-dark-hover-color:           #ffffff;
+$navbar-dark-color:                 #96A1A3;
+$navbar-dark-hover-color:           #96A1A3;
 $navbar-dark-active-color:          #ffffff;
 $navbar-dark-disabled-color:        #ffffff;
 
