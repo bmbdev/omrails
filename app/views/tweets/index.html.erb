@@ -5,7 +5,7 @@
         <div class="card-block">
          <h4 class="card-title">Card title</h4>
          <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-         <p class="card-text"> <%= current_user.email %> </p>
+         <p class="card-text"> <%= current_user.username %> </p>
          <a href="#" class="card-link">Card link</a>
          <a href="#" class="card-link">Another link</a>
         </div>
@@ -18,7 +18,7 @@
       <ul class="list-group">
         <% @tweets.each do |tweet| %>
           <li class = "list-group-item">
-            <h5 class = "mb-1"> <%= tweet.user.email %></h5>
+            <h5 class = "mb-1"> <%= tweet.user.username %></h5>
             <p class="mb-1"> <%= tweet.content %></p>
             <p class ="mb-1"> 
              <%= link_to 'Show', tweet %>
@@ -27,7 +27,7 @@
                 <%= link_to 'Destroy', tweet, method: :delete, data: { confirm: 'Are you sure?' } %>
               <%end%>
             </p>
-            </li>
+          </li>
         <%end%>
       </ul>
     </div>  
