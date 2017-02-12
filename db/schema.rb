@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170208192254) do
+ActiveRecord::Schema.define(version: 20170210203619) do
 
   create_table "active_admin_comments", force: :cascade do |t|
     t.string   "namespace"
@@ -37,6 +37,18 @@ ActiveRecord::Schema.define(version: 20170208192254) do
     t.integer  "mp3_file_size"
     t.datetime "mp3_updated_at"
     t.index ["user_id"], name: "index_audios_on_user_id"
+  end
+
+  create_table "follows", force: :cascade do |t|
+    t.string   "followable_type",                 null: false
+    t.integer  "followable_id",                   null: false
+    t.string   "follower_type",                   null: false
+    t.integer  "follower_id",                     null: false
+    t.boolean  "blocked",         default: false, null: false
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.index ["followable_id", "followable_type"], name: "fk_followables"
+    t.index ["follower_id", "follower_type"], name: "fk_follows"
   end
 
   create_table "installs", force: :cascade do |t|

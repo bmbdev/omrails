@@ -33,6 +33,8 @@ gem 'inherited_resources', git: 'https://github.com/activeadmin/inherited_resour
 
 gem "paperclip", "~> 5.0.0"
 
+gem 'acts_as_follower', github: 'tcocca/acts_as_follower', branch: 'master'
+
 group :development, :test do
   gem 'byebug', platform: :mri
   gem 'sqlite3'
