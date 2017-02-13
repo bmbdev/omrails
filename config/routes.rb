@@ -5,6 +5,7 @@
 
 Rails.application.routes.draw do
   ActiveAdmin.routes(self)
+  get 'feed', to: 'feed#show'
   devise_for :users
   as :user do
     get "signin", to: 'devise/sessions#new'
